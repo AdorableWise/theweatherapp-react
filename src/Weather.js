@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import "./Weather.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
-import WeatherForecast from "./WeatherForecast"; 
-import {ClimbingBoxLoader} from "./react-loader-spinner";
+import WeatherForecast from "./WeatherForecast"
 
 
 export default function Weather(props){
@@ -26,7 +25,7 @@ function handleResponse(response){
 
 function Search(){
   const apiKey = "a867e25f2d83db579421a57fd8e937ec";
-  const apiUrl= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric';
+  const apiUrl= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
 }
 
@@ -68,7 +67,7 @@ if (weatherData.ready){
   );
 } else {
   Search();
-  return <ClimbingBoxLoader color="yellow" />;
+  return "Loading...";
 } 
 } 
  
