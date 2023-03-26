@@ -68,6 +68,5 @@ if (weatherData.ready){
 } else {
   Search();
   return "Loading...";
-} 
-} 
- 
+}
+}
