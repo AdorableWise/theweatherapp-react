@@ -12,11 +12,11 @@ const[city, setCity]=useState(props.defaultCity);
 function handleResponse(response){
   setWeatherData({
     ready:true,
-    coordinates: response.data.coordinates,
-      current: response.data.temperature.current,
+    coordinates: response.data.coord,
+      current: response.data.temp,
     humidity: response.data.main.humidity,
-    date:new Date(response.data.dt*1000),
-    name: response.data.city,
+    date:new Date(response.data.dt * 1000),
+    city: response.data.name,
     description: response.data.weather[0].description,
     icon:response.data.weather[0].icon,
     wind: response.data.wind.speed,

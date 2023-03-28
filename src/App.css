@@ -1,11 +1,11 @@
 .App {
   max-width: 600px;
   margin: 30px auto;
+  background-image: url(https://unsplash.com/photos/wZc0WNNeWq0);
 }
 
 .App footer {
   font-size: 11px;
   margin: 10px 0;
 }
-
   
